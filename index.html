@@ -9,13 +9,13 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@300;400&family=Poppins&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="scss/main.css"/>
-    <title>Document</title>
+    <title>ecoRide</title>
 </head>
 <body>
     <header>
         <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
             <div class="container-fluid">
-              <a class="navbar-brand" href="/">ecoRide</a>
+              <a class="navbar-brand" href="/">ecoRide.</a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
@@ -42,12 +42,38 @@
             </div>
           </nav>
     </header>
-
-    <main id="main-page">
-        <!--le contenu du site-->
-    </main>
-
-    <footer>Le pied de page</footer>
+<main>
+    <div class="hero-scene text-center text-white">
+        <div class="hero-scene-content">
+            <h1>ecoRide.</h1>
+            
+        </div>
+    </div>
+    <div class="container text-center text-black">
+        <p>Chaque jour, nous sommes des millions à nous déplacer.</p>
+        
+        <p>Notre application préserve l’environnement et votre porte-feuilles. </p>
+      
+    <div>
+        <button class="btn btn-primary text-white" onclick="window.location.href = '/login';">Covoiturer</button>
+    </div>
+    
+    <div>
+        <img src="images/ImageHome.jpg" alt="Phare de voiture" class="img-fluid mt-3 w-100">
+    </div> 
+    <div>
+        <p>La société ecoRide souhaite rendre nos trajets éco-friendly et abordables.</p>
+    </div>   
+</main>
+    <footer class="footer bg-dark text-white text-center">
+        <div class="row">
+        <div class="col-12">
+          <h3 class="text-primary">contact@ecoRide.com</h3>
+        </div>
+        <div class="col-12">
+          <h3 class="text-primary">Conditions générales d'utilisation</h3>
+      </div>
+    </footer>
 
     <script type="module" src="./Router/Router.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>

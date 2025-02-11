@@ -3,8 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-        <!-- Bootstrap CSS -->
+    <!-- Bootstrap CSS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@300;400&family=Poppins&display=swap" rel="stylesheet">
@@ -22,16 +21,16 @@
               <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                   <li class="nav-item">
-                    <a class="nav-link" href="/">Accueil</a>
+                    <a class="nav-link" href="/" onclick="route(event)">Accueil</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="/pages/covoiturage.html">Covoiturage</a>
+                    <a class="nav-link" href="/covoiturage" onclick="route(event)">Covoiturage</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Connexion</a>
+                    <a class="nav-link" href="/signin" onclick="route(event)">Connexion</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Contact</a>
+                    <a class="nav-link" href="#" onclick="route(event)">Contact</a>
                   </li>
                 </ul>
                 <form class="d-flex" role="search">
@@ -42,41 +41,21 @@
             </div>
           </nav>
     </header>
-<main>
-    <div class="hero-scene text-center text-white">
-        <div class="hero-scene-content">
-            <h1>ecoRide.</h1>
-            
-        </div>
-    </div>
-    <div class="container text-center text-black">
-        <p>Chaque jour, nous sommes des millions à nous déplacer.</p>
-        
-        <p>Notre application préserve l’environnement et votre porte-feuilles. </p>
-      
-    <div>
-      <a href="pages/covoiturage.html" class="btn btn-primary">Covoiturer</a>
-    </div>
-    
-    <div>
-        <img src="images/ImageHome.jpg" alt="Phare de voiture" class="img-fluid mt-3 w-100">
-    </div> 
-    <div>
-        <p>La société ecoRide souhaite rendre nos trajets éco-friendly et abordables.</p>
-    </div>   
-</main>
+    <main id="main-page">
+        <!-- Le contenu chargé dynamiquement sera inséré ici -->
+    </main>
     <footer class="footer bg-dark text-white text-center">
         <div class="row">
-        <div class="col-12">
-          <h3 class="text-primary">contact@ecoRide.com</h3>
+            <div class="col-12">
+                <h3 class="text-primary">contact@ecoRide.com</h3>
+            </div>
+            <div class="col-12">
+                <h3 class="text-primary">Conditions générales d'utilisation</h3>
+            </div>
         </div>
-        <div class="col-12">
-          <h3 class="text-primary">Conditions générales d'utilisation</h3>
-      </div>
     </footer>
 
     <script type="module" src="./Router/Router.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script src="../js/generateTrajets.js"></script>
 </body>
 </html>

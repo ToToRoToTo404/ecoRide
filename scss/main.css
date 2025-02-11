@@ -11996,6 +11996,7 @@ p {
 
 .hero-scene {
   position: relative;
+  margin-bottom: 15px;
 }
 .hero-scene::before {
   content: "";
@@ -12017,4 +12018,7 @@ p {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+.hero-scene .form-label {
+  color: primary;
 }/*# sourceMappingURL=main.css.map */

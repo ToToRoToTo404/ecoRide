@@ -7,12 +7,13 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@300;400&family=Poppins&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="scss/main.css"/>
-    <title>ecoRide</title>
+    <link rel="stylesheet" href="../scss/main.css"/>
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <title>Créer un trajet - ecoRide</title>
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container-fluid">
               <a class="navbar-brand" href="/">ecoRide.</a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -41,22 +42,37 @@
             </div>
           </nav>
     </header>
-    <main id="main-page">
-        <!-- Le contenu chargé dynamiquement sera inséré ici -->
-    </main>
-    <footer class="footer bg-dark text-white text-center">
-        <div class="row">
-            <div class="col-12">
-                <h3 class="text-primary">contact@ecoRide.com</h3>
-            </div>
-            <div class="col-12">
-                <h3 class="text-primary">Conditions générales d'utilisation</h3>
-            </div>
+    <div class="hero-scene text-center text-white">
+        <div class="hero-scene-content">
+            <h1>Créer un trajet</h1>
         </div>
-    </footer>
-
-    <script type="module" src="./Router/Router.js"></script>
-    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script src="js/navbar.js"></script>
+    </div>
+    <div class="container text-center text-black">
+        <form class="mt-4">
+            <div class="mb-3">
+                <label for="modeleInput" class="form-label">Modèle de la voiture</label>
+                <input type="text" class="form-control" id="modeleInput" placeholder="Entrez le modèle de la voiture">
+            </div>
+            <div class="mb-3">
+                <label for="immatriculation" class="form-label">Immatriculation</label>
+                <input type="text" class="form-control" id="immatriculation" placeholder="Entrez l'immatriculation">
+            </div>
+            <div class="mb-3">
+                <label for="energie" class="form-label">Energie de la voiture</label>
+                <input type="text" class="form-control" id="energie" placeholder="Entrez le type d'énergie">
+            </div>
+            <div class="mb-3">
+                <label for="couleur" class="form-label">Couleur de la voiture</label>
+                <input type="text" class="form-control" id="couleur" placeholder="Entrez la couleur">
+            </div>
+            <div class="mb-3">
+                <label for="datePremiereImmatriculation" class="form-label">Date de la première immatriculation</label>
+                <input type="date" class="form-control" id="datePremiereImmatriculation">
+            </div>
+            <button type="submit" class="btn btn-success btn-block">Créer un trajet</button>
+        </form>
+    </div>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../js/navbar.js"></script>
 </body>
 </html>

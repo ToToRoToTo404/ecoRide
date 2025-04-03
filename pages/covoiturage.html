@@ -3,17 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@300;400&family=Poppins&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../scss/main.css"/>
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../scss/main.css">
     <title>Covoiturage - ecoRide</title>
 </head>
 <body>
-    
-<main>
+    <div class="hero-scene text-center text-white">
+        <div class="hero-scene-content">
+            <h1>Covoiturage</h1>
+        </div>
+    </div>
     <div class="container text-center text-black">
-        <h1>Trouvez votre covoiturage</h1>
         <form class="mt-4">
             <div class="mb-3">
                 <label for="departure" class="form-label">Adresse de départ</label>
@@ -27,14 +27,11 @@
                 <label for="date" class="form-label">Date</label>
                 <input type="date" class="form-control" id="date">
             </div>
-            <button type="submit" class="btn btn-primary">Rechercher</button>
+            <button type="submit" class="btn btn-primary btn-block">Rechercher</button>
         </form>
-        <div id="trajets-container" class="mt-5"></div>
     </div>
-</main>
-    
 
-    <script type="module" src="../Router/Router.js"></script>
-    <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../js/navbar.js"></script>
 </body>
 </html>

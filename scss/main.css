@@ -11972,7 +11972,7 @@ html {
 }
 
 main {
-  margin-bottom: 120px;
+  margin-bottom: 80px;
 }
 
 body {
@@ -12005,15 +12005,14 @@ p {
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url(../images/FondHeroScene.jpg);
-  background-size: cover;
+  background: linear-gradient(to bottom, #12b5a2, rgba(42, 75, 80, 0.9098039216));
   filter: brightness(0.3);
 }
 .hero-scene * {
   position: relative;
 }
 .hero-scene .hero-scene-content {
-  height: 300px;
+  height: 200px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -12021,4 +12020,15 @@ p {
 }
 .hero-scene .form-label {
   color: primary;
+}
+.hero-scene .navbar-collapse {
+  transition: height 0.3s ease, opacity 0.3s ease;
+}
+.hero-scene .navbar-collapse.collapsing {
+  height: 0;
+  opacity: 0;
+}
+.hero-scene .navbar-collapse.collapse.show {
+  height: auto;
+  opacity: 1;
 }/*# sourceMappingURL=main.css.map */

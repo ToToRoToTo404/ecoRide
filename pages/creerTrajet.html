@@ -1,52 +1,22 @@
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Bootstrap CSS -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@300;400&family=Poppins&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../scss/main.css"/>
     <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
-    <title>Créer un trajet - ecoRide</title>
+    <link rel="stylesheet" href="../scss/main.css">
+    <title>Accueil - ecoRide</title>
 </head>
 <body>
-    <header>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <div class="container-fluid">
-              <a class="navbar-brand" href="/">ecoRide.</a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                  <li class="nav-item">
-                    <a class="nav-link" href="/" onclick="route(event)">Accueil</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="/covoiturage" onclick="route(event)">Covoiturage</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="/signin" onclick="route(event)">Connexion</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="/account" onclick="route(event)">Mon compte</a>
-                  </li>
-                </ul>
-                <form class="d-flex" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Recherche trajet" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Search</button>
-                  </form>
-              </div>
-            </div>
-          </nav>
-    </header>
+    <!-- Hero Section -->
     <div class="hero-scene text-center text-white">
         <div class="hero-scene-content">
             <h1>Créer un trajet</h1>
         </div>
     </div>
+
+    <!-- Main Content -->
     <div class="container text-center text-black">
         <form class="mt-4">
             <div class="mb-3">
@@ -69,9 +39,24 @@
                 <label for="datePremiereImmatriculation" class="form-label">Date de la première immatriculation</label>
                 <input type="date" class="form-control" id="datePremiereImmatriculation">
             </div>
-            <button type="submit" class="btn btn-success btn-block">Créer un trajet</button>
+            <button type="submit" class="btn btn-primary btn-block">Créer un trajet</button>
         </form>
     </div>
+
+    <!-- Footer -->
+    <footer class="footer bg-dark text-white text-center py-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h3 class="text-light">contact@ecoRide.com</h3>
+                </div>
+                <div class="col-12">
+                    <h3 class="text-light">Conditions générales d'utilisation</h3>
+                </div>
+            </div>
+        </div>
+    </footer>
+
     <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="../js/navbar.js"></script>
 </body>
